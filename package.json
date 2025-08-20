@@ -1,0 +1,43 @@
+{
+  "name": "eukleia-language",
+  "displayName": "Eukleia",
+  "publisher": "BennBolton",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "main": "./extension.js",
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ekl",
+        "aliases": ["Eukleia", "ekl"],
+        "extensions": [".ekl"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ekl",
+        "scopeName": "source.ekl",
+        "path": "./syntaxes/ekl.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "ekl.runFile",
+        "title": "Run Eukleia File"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "ekl.runFile",
+          "when": "editorLangId == ekl",
+          "group": "navigation"
+        }
+      ]
+    }
+  }
+}
