@@ -27,7 +27,7 @@
     "commands": [
       {
         "command": "ekl.runFile",
-        "title": "Run Eukleia File"
+        "title": "Run =>"
       }
     ],
     "menus": {

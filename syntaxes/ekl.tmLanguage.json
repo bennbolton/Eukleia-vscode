@@ -19,7 +19,7 @@
     },
     "keywords": {
       "patterns": [
-        { "name": "keyword.other.ekl", "match": "\\b(Point|Line|Circle|Angle|Deg|Rad)\\b" }
+        { "name": "entity.name.function.ekl", "match": "\\b(Point|Line|Circle|Angle|Deg|Rad|Print)\\b" }
       ]
     },
     "identifiers": {
