@@ -8,6 +8,10 @@
   },
   "main": "./extension.js",
   "categories": ["Programming Languages"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bennbolton/Eukleia-vscode.git"
+  },
   "contributes": {
     "languages": [
       {
@@ -39,5 +43,6 @@
         }
       ]
     }
-  }
+  },
+  "activationEvents": ["onLanguage:ekl"]
 }
